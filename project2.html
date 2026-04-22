@@ -218,6 +218,15 @@
   <h1 class="sec" id="p2-i"><span class="num-label">3.</span>Инструменты исследования</h1>
 
   <h2 class="sec"><span class="num-label">3.1.</span>Анкета для участников экскурсий (до и после)</h2>
+  <div class="info">Ниже — скриншоты реальных онлайн-анкет Google Forms, использованных в исследовании. Нажмите для просмотра в полном размере.</div>
+  <div class="photo-gallery">
+    <div class="photo-item" onclick="openLB(this)"><img src="img/jku_ankety_1.png" alt="Анкета после экскурсии"><div class="photo-caption">Анкета после экскурсии — блок оценки качества</div></div>
+    <div class="photo-item" onclick="openLB(this)"><img src="img/jku_ankety_2.png" alt="Анкета — вопросы о знаниях"><div class="photo-caption">Блок знаний об индустриальном наследии</div></div>
+    <div class="photo-item" onclick="openLB(this)"><img src="img/jku_ankety_3.png" alt="Анкета — идентичность"><div class="photo-caption">Блок идентичности и патриотических установок</div></div>
+    <div class="photo-item" onclick="openLB(this)"><img src="img/jku_ankety_4.png" alt="Анкета — карьерный интерес"><div class="photo-caption">Карьерная мотивация и открытые вопросы</div></div>
+    <div class="photo-item" onclick="openLB(this)"><img src="img/jku_ankety_5.png" alt="Анкета — страница 2"><div class="photo-caption">Дополнительные вопросы анкеты</div></div>
+    <div class="photo-item" onclick="openLB(this)"><img src="img/jku_ankety_6.png" alt="Анкета — итоговая страница"><div class="photo-caption">Завершение анкеты</div></div>
+  </div>
   <div class="card">
     <span class="badge">Цель инструмента</span>
     <p>Оценить краткосрочное влияние экскурсии на уровень знаний, эмоциональное восприятие и локальную идентичность молодёжи в возрасте 14–25 лет.</p>
@@ -552,5 +561,11 @@
     <div class="footer-text">Уральский институт управления — филиал РАНХиГС · Президентский фонд культурных инициатив · Екатеринбург, 2025–2026 · ГОСТ 7.32-2017</div>
   </div>
 </footer>
+<div class="lb-overlay" id="lb" onclick="closeLB()"><span class="lb-close" onclick="closeLB()">✕</span><img id="lb-img" src="" alt=""></div>
+<script>
+function openLB(el){var img=el.querySelector('img');document.getElementById('lb-img').src=img.src;document.getElementById('lb').classList.add('open')}
+function closeLB(){document.getElementById('lb').classList.remove('open')}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLB()})
+</script>
 </body>
 </html>
