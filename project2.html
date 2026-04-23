@@ -409,30 +409,41 @@
   </div>
 
   <!-- ===== ОТЧЁТЫ 8, 9, 10 ===== -->
-  <h2 class="sec"><span class="num-label">4.1.1.</span>Отчёты об опросах: ключевые данные</h2>
-  <div class="info">Документы 8, 9, 10 представляют собой аналитические отчёты без встроенных графических файлов — данные представлены ниже в виде структурированных карточек с ключевыми выводами из каждого документа.</div>
+  <h2 class="sec"><span class="num-label">4.1.1.</span>Диаграммы опросов «до» и «после» экскурсии</h2>
+  <div class="info">Диаграммы построены на основе данных из отчётов 8 и 9. Вопросы 1–8 идентичны в обоих опросах, что позволяет проследить динамику.</div>
 
-  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin:0 0 24px">
-    <div class="method-card">
-      <div class="icon">📋</div>
-      <h4>Отчёт 8 — Опрос ДО экскурсии</h4>
-      <p style="margin-bottom:8px"><strong>N = 28 человек</strong></p>
-      <p>Знания об истории Урала: <strong>2,4–2,7 / 5</strong><br>Гордость за регион: <strong>4,2–4,5 / 5</strong><br>Карьерный интерес в промышленности: <strong>2,1 / 5</strong></p>
-      <p style="margin-top:8px;font-size:.78rem;color:#7b1111"><em>Вывод: высокая эмоциональная привязанность при низком уровне знаний — точка роста для экскурсии.</em></p>
+  <div class="chart-tabs">
+    <button class="ctab active" onclick="showPieTab('pie-before',this)">До экскурсии (N=28)</button>
+    <button class="ctab" onclick="showPieTab('pie-after',this)">После экскурсии (N=39)</button>
+  </div>
+
+  <div id="pie-before" class="ctab-content">
+    <div class="pie-grid">
+      <div class="pie-card"><div class="pie-title">Вопрос 1: История металлургии на Урале</div><canvas id="b1"></canvas></div>
+      <div class="pie-card"><div class="pie-title">Вопрос 2: Значение городов-заводов</div><canvas id="b2"></canvas></div>
+      <div class="pie-card"><div class="pie-title">Вопрос 3: Ремёсла и промыслы Урала</div><canvas id="b3"></canvas></div>
+      <div class="pie-card"><div class="pie-title">Вопрос 4: Промышленность и искусство</div><canvas id="b4"></canvas></div>
+      <div class="pie-card"><div class="pie-title">Вопрос 5: Я горжусь, что живу на Урале</div><canvas id="b5"></canvas></div>
+      <div class="pie-card"><div class="pie-title">Вопрос 6: Мне важно знать историю региона</div><canvas id="b6"></canvas></div>
+      <div class="pie-card"><div class="pie-title">Вопрос 7: Связь с уральскими мастерами</div><canvas id="b7"></canvas></div>
+      <div class="pie-card"><div class="pie-title">Вопрос 8: Работа в промышленности СО</div><canvas id="b8"></canvas></div>
     </div>
-    <div class="method-card">
-      <div class="icon">📊</div>
-      <h4>Отчёт 9 — Опрос ПОСЛЕ экскурсии</h4>
-      <p style="margin-bottom:8px"><strong>N = 39 человек</strong></p>
-      <p>Доля «высоких» знаний: <strong>8–17% → 51–60%</strong><br>Гордость за Урал: <strong>75% → 89%</strong><br>Качество визуала: <strong>4,49 / 5</strong></p>
-      <p style="margin-top:8px;font-size:.78rem;color:#1a6b3a"><em>Вывод: образовательный эффект доказан. Прирост знаний +35–51 процентных пунктов.</em></p>
-    </div>
-    <div class="method-card">
-      <div class="icon">✅</div>
-      <h4>Документ 10 — Итоговые рекомендации</h4>
-      <p style="margin-bottom:8px"><strong>Сравнение «до» и «после»</strong></p>
-      <p>Прирост знаний: <strong>+0,67–0,89 балла</strong><br>Рост «Связи с мастерами»: <strong>+0,31</strong><br>Оценка интерактивности: <strong>3,8 / 5</strong> (требует улучшения)</p>
-      <p style="margin-top:8px;font-size:.78rem;color:#b35a00"><em>Рекомендация: добавить профориентационный модуль и расширить формат диалога с гидом.</em></p>
+  </div>
+
+  <div id="pie-after" class="ctab-content" style="display:none">
+    <div class="pie-grid">
+      <div class="pie-card"><div class="pie-title">Вопрос 1: История металлургии на Урале</div><canvas id="a1"></canvas></div>
+      <div class="pie-card"><div class="pie-title">Вопрос 2: Значение городов-заводов</div><canvas id="a2"></canvas></div>
+      <div class="pie-card"><div class="pie-title">Вопрос 3: Ремёсла и промыслы Урала</div><canvas id="a3"></canvas></div>
+      <div class="pie-card"><div class="pie-title">Вопрос 4: Промышленность и искусство</div><canvas id="a4"></canvas></div>
+      <div class="pie-card"><div class="pie-title">Вопрос 5: Я горжусь, что живу на Урале</div><canvas id="a5"></canvas></div>
+      <div class="pie-card"><div class="pie-title">Вопрос 6: Мне важно знать историю региона</div><canvas id="a6"></canvas></div>
+      <div class="pie-card"><div class="pie-title">Вопрос 7: Связь с уральскими мастерами</div><canvas id="a7"></canvas></div>
+      <div class="pie-card"><div class="pie-title">Вопрос 8: Работа в промышленности СО</div><canvas id="a8"></canvas></div>
+      <div class="pie-card"><div class="pie-title">Вопрос 9: Ясность повествования гида</div><canvas id="a9"></canvas></div>
+      <div class="pie-card"><div class="pie-title">Вопрос 10: Эмоциональная вовлечённость</div><canvas id="a10"></canvas></div>
+      <div class="pie-card"><div class="pie-title">Вопрос 11: Качество визуальных материалов</div><canvas id="a11"></canvas></div>
+      <div class="pie-card"><div class="pie-title">Вопрос 12: Возможность задавать вопросы</div><canvas id="a12"></canvas></div>
     </div>
   </div>
 
@@ -597,10 +608,51 @@
   </div>
 </footer>
 <div class="lb-overlay" id="lb" onclick="closeLB()"><span class="lb-close" onclick="closeLB()">✕</span><img id="lb-img" src="" alt=""></div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 <script>
 function openLB(el){var img=el.querySelector('img');document.getElementById('lb-img').src=img.src;document.getElementById('lb').classList.add('open')}
 function closeLB(){document.getElementById('lb').classList.remove('open')}
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLB()})
+
+function showPieTab(id,btn){
+  document.querySelectorAll('.ctab-content').forEach(function(el){el.style.display='none'});
+  document.querySelectorAll('.ctab').forEach(function(el){el.classList.remove('active')});
+  document.getElementById(id).style.display='block';
+  btn.classList.add('active');
+}
+
+var PIE_COLORS=['#c0392b','#e67e22','#f1c40f','#27ae60','#2980b9'];
+var PIE_LABELS=['⭐ 1','⭐ 2','⭐ 3','⭐ 4','⭐ 5'];
+
+function mkPie(id,data){
+  var ctx=document.getElementById(id);
+  if(!ctx)return;
+  new Chart(ctx,{type:'pie',data:{labels:PIE_LABELS,datasets:[{data:data,backgroundColor:PIE_COLORS,borderWidth:2,borderColor:'#fff'}]},options:{plugins:{legend:{position:'bottom',labels:{font:{size:12},padding:8}},tooltip:{callbacks:{label:function(c){return c.label+': '+c.parsed.toFixed(1)+'%'}}}},animation:{duration:600}}});
+}
+
+// ДО экскурсии (N=28) — значения в %
+mkPie('b1',[12.5,16.7,62.5,4.2,4.2]);
+mkPie('b2',[8.3,41.7,37.5,8.3,4.2]);
+mkPie('b3',[20.8,33.3,37.5,4.2,4.2]);
+mkPie('b4',[16.7,25,41.7,12.5,4.2]);
+mkPie('b5',[0,4,8,24,64]);
+mkPie('b6',[0,4,20,28,48]);
+mkPie('b7',[12,24,40,12,12]);
+mkPie('b8',[40,24,24,8,4]);
+
+// ПОСЛЕ экскурсии (N=39)
+mkPie('a1',[2.7,21.6,24.3,37.8,13.5]);
+mkPie('a2',[5.4,18.9,27,37.8,10.8]);
+mkPie('a3',[10.8,16.2,21.6,37.8,13.5]);
+mkPie('a4',[13.5,5.4,29.7,37.8,13.5]);
+mkPie('a5',[0,2.7,8.1,40.5,48.6]);
+mkPie('a6',[0,2.7,16.2,43.2,37.8]);
+mkPie('a7',[16.2,8.1,40.5,10.8,24.3]);
+mkPie('a8',[45.9,18.9,13.5,10.8,10.8]);
+mkPie('a9',[0,0,10.3,33.3,56.4]);
+mkPie('a10',[0,0,12.8,46.2,41]);
+mkPie('a11',[0,0,12.8,25.6,61.5]);
+mkPie('a12',[0,12.8,10.3,28.2,48.7]);
 </script>
 </body>
 </html>
