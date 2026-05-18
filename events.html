@@ -18,8 +18,9 @@
     .event-gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:14px}
     .event-gallery img{width:100%;height:160px;object-fit:cover;border-radius:3px;cursor:pointer;transition:.2s}
     .event-gallery img:hover{opacity:.85}
-    .event-link{display:inline-flex;align-items:center;gap:6px;font-size:.83rem;font-family:Arial,sans-serif;color:#9b1c1c;text-decoration:none;border:1px solid #e0c8c8;padding:6px 14px;border-radius:3px;background:#fdf7f7;transition:.2s}
+    .event-link{display:inline-flex;align-items:center;gap:8px;font-size:.92rem;font-family:Arial,sans-serif;font-weight:600;color:#9b1c1c;text-decoration:none;border:1px solid #c8a0a0;padding:10px 22px;border-radius:4px;background:#fdf7f7;transition:.2s}
     .event-link:hover{background:#9b1c1c;color:#fff;border-color:#9b1c1c}
+    .event-link svg{width:18px;height:18px;flex-shrink:0}
   </style>
 </head>
 <body>
@@ -73,7 +74,7 @@
       <img src="img/events/shaly_4.jpg" alt="Шаля 4" onclick="openLB(this)">
       <img src="img/events/shaly_5.jpg" alt="Шаля 5" onclick="openLB(this)">
     </div>
-    <a class="event-link" href="http://shalya.info/nashe-mnenie-zemljaki-shalincy-uchtut-na-samom-vysokom-urovne/" target="_blank">📰 Читать статью</a>
+    <a class="event-link" href="http://shalya.info/nashe-mnenie-zemljaki-shalincy-uchtut-na-samom-vysokom-urovne/" target="_blank"><i data-lucide="newspaper"></i> Читать статью</a>
   </div>
 
   <!-- НИЖНИЙ ТАГИЛ -->
@@ -95,7 +96,7 @@
       <img src="img/events/ntag_4.jpg" alt="Нижний Тагил 4" onclick="openLB(this)">
       <img src="img/events/ntag_5.jpg" alt="Нижний Тагил 5" onclick="openLB(this)">
     </div>
-    <a class="event-link" href="https://vk.ru/wall-204102663_8655" target="_blank">📰 Читать публикацию ВКонтакте</a>
+    <a class="event-link" href="https://vk.ru/wall-204102663_8655" target="_blank"><i data-lucide="external-link"></i> Читать публикацию ВКонтакте</a>
   </div>
 
   <!-- ПЕРВОУРАЛЬСК -->
@@ -135,13 +136,15 @@
       <img src="img/events/sysert_4.jpg" alt="Сысерть 4" onclick="openLB(this)">
       <img src="img/events/sysert_5.jpg" alt="Сысерть 5" onclick="openLB(this)">
     </div>
-    <a class="event-link" href="https://vk.ru/wall-149633637_77211" target="_blank">📰 Читать публикацию ВКонтакте</a>
+    <a class="event-link" href="https://vk.ru/wall-149633637_77211" target="_blank"><i data-lucide="external-link"></i> Читать публикацию ВКонтакте</a>
   </div>
 
 </div>
 
 <div class="lb-overlay" id="lb" onclick="closeLB()"><span class="lb-close" onclick="closeLB()">✕</span><img id="lb-img" src="" alt=""></div>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 <script>
+lucide.createIcons();
 function openLB(img){document.getElementById('lb-img').src=img.src;document.getElementById('lb').classList.add('open')}
 function closeLB(){document.getElementById('lb').classList.remove('open')}
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLB()})

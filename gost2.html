@@ -11,11 +11,13 @@
     .file-num{font-size:1.1rem;font-weight:700;color:#9b1c1c;font-family:'Times New Roman',serif;min-width:32px}
     .file-name{flex:1;font-size:.95rem;font-weight:700;color:#1a1a1a;font-family:Arial,sans-serif;line-height:1.4}
     .file-actions{display:flex;gap:8px;flex-shrink:0}
-    .btn-view{display:inline-flex;align-items:center;gap:5px;padding:7px 14px;border-radius:3px;font-size:.8rem;font-family:Arial,sans-serif;font-weight:600;text-decoration:none;border:1px solid #9b1c1c;color:#9b1c1c;background:#fff;transition:.2s}
+    .btn-view{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:3px;font-size:.8rem;font-family:Arial,sans-serif;font-weight:600;text-decoration:none;border:1px solid #9b1c1c;color:#9b1c1c;background:#fff;transition:.2s}
     .btn-view:hover{background:#9b1c1c;color:#fff}
-    .btn-dl{display:inline-flex;align-items:center;gap:5px;padding:7px 14px;border-radius:3px;font-size:.8rem;font-family:Arial,sans-serif;font-weight:600;text-decoration:none;background:#9b1c1c;color:#fff;border:1px solid #9b1c1c;transition:.2s}
+    .btn-dl{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:3px;font-size:.8rem;font-family:Arial,sans-serif;font-weight:600;text-decoration:none;background:#9b1c1c;color:#fff;border:1px solid #9b1c1c;transition:.2s}
     .btn-dl:hover{background:#7b1111}
-    .file-icon{font-size:1.4rem;flex-shrink:0}
+    .btn-view svg,.btn-dl svg{width:14px;height:14px;flex-shrink:0}
+    .file-icon{display:flex;align-items:center;color:#9b1c1c;flex-shrink:0}
+    .file-icon svg{width:22px;height:22px}
     @media(max-width:680px){.file-row{flex-wrap:wrap}.file-actions{width:100%}}
   </style>
 </head>
@@ -58,53 +60,55 @@
 
   <div class="file-list">
     <div class="file-row">
-      <div class="file-icon">📄</div>
+      <div class="file-icon"><i data-lucide="file-text"></i></div>
       <div class="file-num">5.1</div>
       <div class="file-name">Паспорт проекта</div>
       <div class="file-actions">
-        <a class="btn-view" href="pdf/jku/5.1_Pasport_proekta.pdf" target="_blank">👁 Открыть</a>
-        <a class="btn-dl" href="pdf/jku/5.1_Pasport_proekta.pdf" download>⬇ Скачать</a>
+        <a class="btn-view" href="pdf/jku/5.1_Pasport_proekta.pdf" target="_blank"><i data-lucide="eye"></i> Открыть</a>
+        <a class="btn-dl" href="pdf/jku/5.1_Pasport_proekta.pdf" download><i data-lucide="download"></i> Скачать</a>
       </div>
     </div>
     <div class="file-row">
-      <div class="file-icon">📄</div>
+      <div class="file-icon"><i data-lucide="file-text"></i></div>
       <div class="file-num">5.2</div>
       <div class="file-name">Обзор альтернативных исследовательских подходов</div>
       <div class="file-actions">
-        <a class="btn-view" href="pdf/jku/5.2_Obzor_podhodov.pdf" target="_blank">👁 Открыть</a>
-        <a class="btn-dl" href="pdf/jku/5.2_Obzor_podhodov.pdf" download>⬇ Скачать</a>
+        <a class="btn-view" href="pdf/jku/5.2_Obzor_podhodov.pdf" target="_blank"><i data-lucide="eye"></i> Открыть</a>
+        <a class="btn-dl" href="pdf/jku/5.2_Obzor_podhodov.pdf" download><i data-lucide="download"></i> Скачать</a>
       </div>
     </div>
     <div class="file-row">
-      <div class="file-icon">📄</div>
+      <div class="file-icon"><i data-lucide="file-text"></i></div>
       <div class="file-num">5.3</div>
       <div class="file-name">Общий оценочный дизайн</div>
       <div class="file-actions">
-        <a class="btn-view" href="pdf/jku/5.3_Ocenochnyj_dizajn.pdf" target="_blank">👁 Открыть</a>
-        <a class="btn-dl" href="pdf/jku/5.3_Ocenochnyj_dizajn.pdf" download>⬇ Скачать</a>
+        <a class="btn-view" href="pdf/jku/5.3_Ocenochnyj_dizajn.pdf" target="_blank"><i data-lucide="eye"></i> Открыть</a>
+        <a class="btn-dl" href="pdf/jku/5.3_Ocenochnyj_dizajn.pdf" download><i data-lucide="download"></i> Скачать</a>
       </div>
     </div>
     <div class="file-row">
-      <div class="file-icon">📄</div>
+      <div class="file-icon"><i data-lucide="file-text"></i></div>
       <div class="file-num">5.4</div>
       <div class="file-name">Методология оценки проекта</div>
       <div class="file-actions">
-        <a class="btn-view" href="pdf/jku/5.4_Metodologiya.pdf" target="_blank">👁 Открыть</a>
-        <a class="btn-dl" href="pdf/jku/5.4_Metodologiya.pdf" download>⬇ Скачать</a>
+        <a class="btn-view" href="pdf/jku/5.4_Metodologiya.pdf" target="_blank"><i data-lucide="eye"></i> Открыть</a>
+        <a class="btn-dl" href="pdf/jku/5.4_Metodologiya.pdf" download><i data-lucide="download"></i> Скачать</a>
       </div>
     </div>
     <div class="file-row">
-      <div class="file-icon">📄</div>
+      <div class="file-icon"><i data-lucide="file-text"></i></div>
       <div class="file-num">5.5</div>
       <div class="file-name">Итоговый аналитический отчёт (полный)</div>
       <div class="file-actions">
-        <a class="btn-view" href="pdf/jku/5.5_Itogovyj_otchet.pdf" target="_blank">👁 Открыть</a>
-        <a class="btn-dl" href="pdf/jku/5.5_Itogovyj_otchet.pdf" download>⬇ Скачать</a>
+        <a class="btn-view" href="pdf/jku/5.5_Itogovyj_otchet.pdf" target="_blank"><i data-lucide="eye"></i> Открыть</a>
+        <a class="btn-dl" href="pdf/jku/5.5_Itogovyj_otchet.pdf" download><i data-lucide="download"></i> Скачать</a>
       </div>
     </div>
   </div>
 
 </div>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>lucide.createIcons();</script>
 <footer>
   <div class="footer-inner">
     <img src="emblem.webp" alt="">
