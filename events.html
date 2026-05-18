@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мероприятия в территориях — ПФКИ</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .event-block{background:#fff;border:1px solid #e0d8d8;border-radius:4px;padding:24px 28px;margin-bottom:28px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+    .event-header{display:flex;align-items:flex-start;gap:16px;margin-bottom:14px;flex-wrap:wrap}
+    .event-num{font-size:2rem;font-weight:700;color:#e0c0c0;font-family:'Times New Roman',serif;line-height:1;flex-shrink:0}
+    .event-title-wrap{flex:1}
+    .event-city{font-size:1.2rem;font-weight:700;color:#1a1a1a;font-family:'Times New Roman',serif;margin-bottom:4px}
+    .event-project-tag{display:inline-block;font-size:.72rem;font-weight:700;border-radius:2px;padding:2px 10px;font-family:Arial,sans-serif;letter-spacing:.03em;margin-bottom:6px}
+    .event-project-tag.nzght{background:#1a6b3a;color:#fff}
+    .event-project-tag.jku{background:#1a4a7b;color:#fff}
+    .event-desc{font-size:.88rem;color:#444;font-family:Arial,sans-serif;line-height:1.7;margin-bottom:14px}
+    .event-gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:14px}
+    .event-gallery img{width:100%;height:160px;object-fit:cover;border-radius:3px;cursor:pointer;transition:.2s}
+    .event-gallery img:hover{opacity:.85}
+    .event-link{display:inline-flex;align-items:center;gap:6px;font-size:.83rem;font-family:Arial,sans-serif;color:#9b1c1c;text-decoration:none;border:1px solid #e0c8c8;padding:6px 14px;border-radius:3px;background:#fdf7f7;transition:.2s}
+    .event-link:hover{background:#9b1c1c;color:#fff;border-color:#9b1c1c}
+  </style>
+</head>
+<body>
+<div class="site-header">
+  <img src="emblem.webp" alt="Эмблема РАНХиГС">
+  <div class="site-header-text">
+    <div class="org-line">Федеральное государственное бюджетное образовательное учреждение высшего образования</div>
+    <div class="org-name">Президентская академия · Уральский институт управления — филиал РАНХиГС</div>
+    <div class="doc-label">Аналитический отчёт · ГОСТ 7.32-2017 · Екатеринбург, 2025–2026</div>
+  </div>
+</div>
+<nav>
+  <span class="logo">Ural Research · ПФКИ</span>
+  <a href="index.html">Общий отчёт</a>
+  <a href="project1.html">1. «На зелёной горке»</a>
+  <a href="project2.html">2. «Железное кольцо»</a>
+  <a href="ocenka.html">Оценка проектов</a>
+  <a href="gost1.html">Отчёт НЗГХТ</a>
+  <a href="gost2.html">Отчёт ЖКУ</a>
+  <a href="events.html" class="active">Мероприятия</a>
+</nav>
+
+<div class="page">
+  <div class="breadcrumb"><a href="index.html">Отчёт</a><span>›</span>Мероприятия в территориях</div>
+
+  <div class="title-page">
+    <span class="badge" style="margin-bottom:12px">Полевая работа · 2025–2026</span>
+    <h1>Мероприятия в территориях</h1>
+    <div class="subtitle">Встречи, экскурсии и фестивали в рамках оцениваемых проектов на территории Свердловской области</div>
+  </div>
+
+  <h1 class="sec"><span class="num-label">1.</span>Мероприятия</h1>
+  <div class="info">В ходе оценки команда принимала участие в полевых мероприятиях обоих проектов — фестивале в Сысерти, встречах с экспертами и участниками в Шале, Нижнем Тагиле и Первоуральске.</div>
+
+  <!-- ШАЛЯ -->
+  <div class="event-block">
+    <div class="event-header">
+      <div class="event-num">1</div>
+      <div class="event-title-wrap">
+        <div class="event-project-tag nzght">Проект «На зелёной горке»</div>
+        <div class="event-city">Шаля, Свердловская область</div>
+      </div>
+    </div>
+    <div class="event-desc">
+      Выездная встреча с местными мастерами народных ремёсел в Шалинском районе. Участники познакомились с традиционными техниками ткачества и прядения, передаваемыми в семьях Шали из поколения в поколение. Мероприятие позволило зафиксировать бытование ремёсел за пределами фестивальной площадки и оценить потенциал привлечения новых мастеров в проект. Местные жители отметили значимость фестиваля как площадки признания их мастерства на региональном уровне.
+    </div>
+    <div class="event-gallery">
+      <img src="img/events/shaly_1.jpg" alt="Шаля 1" onclick="openLB(this)">
+      <img src="img/events/shaly_2.jpg" alt="Шаля 2" onclick="openLB(this)">
+      <img src="img/events/shaly_3.jpg" alt="Шаля 3" onclick="openLB(this)">
+      <img src="img/events/shaly_4.jpg" alt="Шаля 4" onclick="openLB(this)">
+      <img src="img/events/shaly_5.jpg" alt="Шаля 5" onclick="openLB(this)">
+    </div>
+    <a class="event-link" href="http://shalya.info/nashe-mnenie-zemljaki-shalincy-uchtut-na-samom-vysokom-urovne/" target="_blank">📰 Читать статью</a>
+  </div>
+
+  <!-- НИЖНИЙ ТАГИЛ -->
+  <div class="event-block">
+    <div class="event-header">
+      <div class="event-num">2</div>
+      <div class="event-title-wrap">
+        <div class="event-project-tag jku">Проект «Железное кольцо Урала»</div>
+        <div class="event-city">Нижний Тагил, Свердловская область</div>
+      </div>
+    </div>
+    <div class="event-desc">
+      22 апреля 2026 года в культурном центре «Дом Окуджавы» состоялась экспертная встреча с представителями культурных и образовательных учреждений Нижнего Тагила. В обсуждении приняли участие сотрудники Нижнетагильского музея изобразительных искусств, Нижнетагильской филармонии, Музея памяти воинов-тагильчан, Дома детского творчества. Участники обсудили маршруты «Железного кольца», образовательный потенциал проекта и возможности его интеграции с учреждениями города.
+    </div>
+    <div class="event-gallery">
+      <img src="img/events/ntag_1.jpg" alt="Нижний Тагил 1" onclick="openLB(this)">
+      <img src="img/events/ntag_2.jpg" alt="Нижний Тагил 2" onclick="openLB(this)">
+      <img src="img/events/ntag_3.jpg" alt="Нижний Тагил 3" onclick="openLB(this)">
+      <img src="img/events/ntag_4.jpg" alt="Нижний Тагил 4" onclick="openLB(this)">
+      <img src="img/events/ntag_5.jpg" alt="Нижний Тагил 5" onclick="openLB(this)">
+    </div>
+    <a class="event-link" href="https://vk.ru/wall-204102663_8655" target="_blank">📰 Читать публикацию ВКонтакте</a>
+  </div>
+
+  <!-- ПЕРВОУРАЛЬСК -->
+  <div class="event-block">
+    <div class="event-header">
+      <div class="event-num">3</div>
+      <div class="event-title-wrap">
+        <div class="event-project-tag jku">Проект «Железное кольцо Урала»</div>
+        <div class="event-city">Первоуральск, Свердловская область</div>
+      </div>
+    </div>
+    <div class="event-desc">
+      Выездное мероприятие в Первоуральске в рамках маршрутов «Железного кольца Урала». Участники посетили исторические объекты индустриального наследия города — одного из старейших металлургических центров Урала. Первоуральск стал одной из ключевых точек маршрута, демонстрирующей связь промышленной истории региона с его современным обликом.
+    </div>
+    <div class="event-gallery">
+      <img src="img/events/pervou_1.jpg" alt="Первоуральск 1" onclick="openLB(this)">
+      <img src="img/events/pervou_2.jpg" alt="Первоуральск 2" onclick="openLB(this)">
+    </div>
+  </div>
+
+  <!-- СЫСЕРТЬ -->
+  <div class="event-block">
+    <div class="event-header">
+      <div class="event-num">4</div>
+      <div class="event-title-wrap">
+        <div class="event-project-tag nzght">Проект «На зелёной горке»</div>
+        <div class="event-city">Сысерть, Свердловская область</div>
+      </div>
+    </div>
+    <div class="event-desc">
+      IV Межрегиональный фестиваль ткачества и прядения «На зелёной горке холст ткут» в Сысерти — центральное мероприятие оцениваемого проекта. Более 4 000 участников: мастера из десятков регионов России, дети, студенты, туристы. В программе — мастер-классы «Текстильный калейдоскоп», лаборатория «Ткем вместе», коллективное создание «дорожки дружбы». Фестиваль стал площадкой для профессиональных связей мастеров и живым примером передачи традиционного ремесла между поколениями.
+    </div>
+    <div class="event-gallery">
+      <img src="img/events/sysert_1.jpg" alt="Сысерть 1" onclick="openLB(this)">
+      <img src="img/events/sysert_2.jpg" alt="Сысерть 2" onclick="openLB(this)">
+      <img src="img/events/sysert_3.jpg" alt="Сысерть 3" onclick="openLB(this)">
+      <img src="img/events/sysert_4.jpg" alt="Сысерть 4" onclick="openLB(this)">
+      <img src="img/events/sysert_5.jpg" alt="Сысерть 5" onclick="openLB(this)">
+    </div>
+    <a class="event-link" href="https://vk.ru/wall-149633637_77211" target="_blank">📰 Читать публикацию ВКонтакте</a>
+  </div>
+
+</div>
+
+<div class="lb-overlay" id="lb" onclick="closeLB()"><span class="lb-close" onclick="closeLB()">✕</span><img id="lb-img" src="" alt=""></div>
+<script>
+function openLB(img){document.getElementById('lb-img').src=img.src;document.getElementById('lb').classList.add('open')}
+function closeLB(){document.getElementById('lb').classList.remove('open')}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLB()})
+</script>
+
+<footer>
+  <div class="footer-inner">
+    <img src="emblem.webp" alt="">
+    <div class="footer-text">Уральский институт управления — филиал РАНХиГС · Президентский фонд культурных инициатив · Екатеринбург, 2025–2026 · ГОСТ 7.32-2017</div>
+  </div>
+</footer>
+</body>
+</html>
